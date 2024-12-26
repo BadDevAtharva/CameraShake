@@ -23,8 +23,7 @@ public class CameraShake : MonoBehaviour
         if (shakeTimer > 0)
         {
             shakeTimer -= Time.deltaTime;
-
-
+            
             float x = Mathf.PerlinNoise(Time.time * 10, 0) - 0.5f;
             float y = Mathf.PerlinNoise(0,Time.time * 10) - 0.5f;
 
